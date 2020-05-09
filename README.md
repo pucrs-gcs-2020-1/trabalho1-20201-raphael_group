@@ -12,9 +12,10 @@ refat: para refatorização de código/componente
 feat: para adição de novas features
 bug: para correção de bug
 Se possível realizar os commits em inglês e evitar o uso de acentos.
-# O mesmo serve para novas branches criadas!
+O mesmo serve para novas branches criadas!
 
-# Responsáveis por aceitar pull requests serão definidos, caso não haja interesse eu (Raphael), serei o responsável.
+# Responsáveis por aceitar pull requests:
+- Raphael Remião
 
 # Canais de comunicação
 Slack: https://join.slack.com/t/trabalho1cgs/shared_invite/zt-e7wkne4i-ATZ6MJAcTmU7EcIQZ_WQ3g
