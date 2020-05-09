@@ -19,5 +19,5 @@ Componentes do time:
 - Raphael Remião
 
 # Canais de comunicação
-- Slack: https://join.slack.com/t/trabalho1cgs/shared_invite/zt-e7wkne4i-ATZ6MJAcTmU7EcIQZ_WQ3g
-- Trello: https://trello.com/invite/b/ZnhJfbBj/7695a6aab15b1d06533c79a4afc0f3b0/trabalho-1-gcs
+- Slack: https://join.slack.com/t/raphaelgroupgcs/shared_invite/zt-e4t9y3o6-_JVTZ5kQP5e1rpkur_MefQ
+- Trello: https://trello.com/invite/b/ZnhJfbBj/7695a6aab15b1d06533c79a4afc0f3b0/raphael-group-gcs
