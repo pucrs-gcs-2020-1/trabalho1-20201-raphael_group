@@ -15,6 +15,11 @@ Componentes do time:
 - Se possível realizar os commits em inglês e evitar o uso de acentos.
 - O mesmo serve para novas branches criadas!
 
+# O flow de branches:
+- master: Será populada apenas com esse README, e ao final do trabalho preenchida com o que foi realizado e outras branches serão deletadas
+- dev: Essa é a branch que todos os pull requests serão efetuados.
+- dummies: Branches criadas para desenvolvimento de algo especifíco deverá seguir as mesmas regras de commit descritas acima, ou seja, incluir uma tag no nome da branch, junto do o que será desenvolvido nela. (ie bug-table-logic)
+
 # Responsáveis por aceitar pull requests:
 - Raphael Remião
 
