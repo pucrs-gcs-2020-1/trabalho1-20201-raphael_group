@@ -13,7 +13,7 @@ class HomePage extends Component {
       <Container>
         <Grid style={{display:"flex", flexDirection:"row", justifyContent:"flex-start"}}>
           <text
-            
+
           > O seu usuário atual é: {this.state.user}, para trocá-lo <Button onClick={() => window.location.href="/user"}>clique aqui</Button></text>
         </Grid>
       </Container>
