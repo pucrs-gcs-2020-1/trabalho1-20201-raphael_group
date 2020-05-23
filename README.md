@@ -35,8 +35,8 @@ Crie uma pasta dedicada para o trabalho e pelo seu terminal insira os seguintes 
  - git clone https://github.com/pucrs-gcs-2020-1/trabalho1-20201-raphael_group.git  
  - cd trabalho1-20201-raphael_group
  - git checkout dev
- - npm install (ou yarn install)
  - git pull
+  - npm install (ou yarn install)
  
 Após realizar todos esses passos seu ambiente de desenvolvimento está pronto, para inicia-lo basta utilizar o comando
 - npm start
