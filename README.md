@@ -26,3 +26,16 @@ Componentes do time:
 # Canais de comunicação
 - Slack: https://join.slack.com/t/raphaelgroupgcs/shared_invite/zt-e4t9y3o6-_JVTZ5kQP5e1rpkur_MefQ
 - Trello: https://trello.com/invite/b/ZnhJfbBj/7695a6aab15b1d06533c79a4afc0f3b0/raphael-group-gcs
+
+
+#Getting Started!
+
+Crie uma pasta dedicada para o trabalho e pelo seu terminal insira os seguintes comandos (Dentro da nova pasta):
+ - git clone https://github.com/pucrs-gcs-2020-1/trabalho1-20201-raphael_group.git  
+ - cd trabalho1-20201-raphael_group
+ - npm install (ou yarn install)
+ - git checkout dev
+ - git pull
+ 
+Após realizar todos esses passos seu ambiente de desenvolvimento está pronto, para inicia-lo basta utilizar o comando
+- npm start
