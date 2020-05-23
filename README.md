@@ -5,6 +5,7 @@ Componentes do time:
 - Raphael Remião 
 - Enzo Russo
 - Giovanni Frozza
+- Andrei Rupertti
 
 
 # Definindo regras:
@@ -28,7 +29,7 @@ Componentes do time:
 - Trello: https://trello.com/invite/b/ZnhJfbBj/7695a6aab15b1d06533c79a4afc0f3b0/raphael-group-gcs
 
 
-#Getting Started!
+# Getting Started!
 
 Crie uma pasta dedicada para o trabalho e pelo seu terminal insira os seguintes comandos (Dentro da nova pasta):
  - git clone https://github.com/pucrs-gcs-2020-1/trabalho1-20201-raphael_group.git  
