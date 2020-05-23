@@ -34,8 +34,8 @@ Componentes do time:
 Crie uma pasta dedicada para o trabalho e pelo seu terminal insira os seguintes comandos (Dentro da nova pasta):
  - git clone https://github.com/pucrs-gcs-2020-1/trabalho1-20201-raphael_group.git  
  - cd trabalho1-20201-raphael_group
- - npm install (ou yarn install)
  - git checkout dev
+ - npm install (ou yarn install)
  - git pull
  
 Após realizar todos esses passos seu ambiente de desenvolvimento está pronto, para inicia-lo basta utilizar o comando
