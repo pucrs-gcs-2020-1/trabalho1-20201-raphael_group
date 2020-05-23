@@ -36,7 +36,8 @@ Crie uma pasta dedicada para o trabalho e pelo seu terminal insira os seguintes 
  - cd trabalho1-20201-raphael_group
  - git checkout dev
  - git pull
-  - npm install (ou yarn install)
+ - cd livro-caixa
+ - npm install (ou yarn install)
  
 Após realizar todos esses passos seu ambiente de desenvolvimento está pronto, para inicia-lo basta utilizar o comando
 - npm start
