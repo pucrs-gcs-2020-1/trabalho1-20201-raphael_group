@@ -5,7 +5,8 @@ import { Form, Container } from "./styles";
 
 class CreateOperator extends Component {
   state = {
-    user: "User 1",
+    operator: "Operator 1",
+    init: "OP"
   };
 
 
@@ -15,13 +16,13 @@ class CreateOperator extends Component {
         <Grid style={{display:"flex", flexDirection:"row", justifyContent:"flex-start", marginTop:"30px"}}>
           <label>
             Nome:
-            <input type="text" name="name"/>
+            <input type="text" name="name" onChange={(value => this.setState({operator:value}))}/>
           </label>
           <label style={{marginLeft:"30px"}}>
             Iniciais:
-            <input type="text" name="iniciais"/>
+            <input type="text" name="iniciais" onChange={(value => this.setState({operator:value}))}/>
           </label>
-          <input type="submit" value="Confirmar" onClick={() => window.location.href="/user"}/>
+          <input type="submit" value="Confirmar" onClick={() => window.location.href="/ListOperator"}/>
         </Grid>
       </Container>
     );
