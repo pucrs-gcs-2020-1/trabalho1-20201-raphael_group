@@ -12,14 +12,14 @@ class CreateOperator extends Component {
   render() {
     return (
       <Container>
-        <Grid style={{display:"flex", flexDirection:"row", justifyContent:"flex-start"}}>
+        <Grid style={{display:"flex", flexDirection:"row", justifyContent:"flex-start", marginTop:"30px"}}>
           <label>
             Nome:
-            <input type="text" name="name" />
+            <input type="text" name="name"/>
           </label>
-          <label>
+          <label style={{marginLeft:"30px"}}>
             Iniciais:
-            <input type="text" name="iniciais" />
+            <input type="text" name="iniciais"/>
           </label>
           <input type="submit" value="Confirmar" onClick={() => window.location.href="/user"}/>
         </Grid>
