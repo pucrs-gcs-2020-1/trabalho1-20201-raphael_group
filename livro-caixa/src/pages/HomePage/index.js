@@ -35,9 +35,5 @@ class HomePage extends Component {
     );
   }
 }
-<<<<<<< HEAD
 
 export default HomePage;
-=======
-export default HomePage;
->>>>>>> dev

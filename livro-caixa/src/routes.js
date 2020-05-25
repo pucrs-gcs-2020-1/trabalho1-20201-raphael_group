@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { isAuthenticated } from "./services/auth";
 import CreateOperator from "./pages/CreateOperator";
-import User from "./pages/User";
 import HomePage from "./pages/HomePage";
+import SignUp from "./pages/SignUp"
 import ListOperator from "./pages/ListOperator";
 
 
@@ -25,8 +25,7 @@ const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route path="/signup" component={() => <h1>SignUp</h1>} />
-      <Route path="/user" component={User}/>
+      <Route path="/signup" component={SignUp} />
       <Route path="/CreateOperator" component={CreateOperator}/>
       <Route path="/ListOperator" component={ListOperator}/>
       <PrivateRoute path="/app" component={() => <h1>App</h1>} />
