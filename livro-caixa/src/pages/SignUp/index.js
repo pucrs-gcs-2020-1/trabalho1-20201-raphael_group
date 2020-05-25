@@ -13,9 +13,9 @@ class SignUp extends Component {
       <Container>
         <Grid style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: 20 }}>
           <Grid item md={3} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <text> Digite as informações requeridas</text>
-             <TextField label= "Nome " onChange={(value) => this.setState({userName:value})}/>
-             <TextField label= "Iniciais " onChange={(value) => this.setState({initials: value})} />
+            <text style={{marginBottom:20}}> Digite as informações requeridas</text>
+             <TextField variant="outlined" label= "Nome " onChange={(value) => this.setState({userName:value})} style={{marginBottom:20}}/>
+             <TextField variant="outlined" label= "Iniciais " onChange={(value) => this.setState({initials: value})} />
              <Button onClick={() => window.location.href="/"}> Confirmar dados!</Button>
           </Grid>
         </Grid>
