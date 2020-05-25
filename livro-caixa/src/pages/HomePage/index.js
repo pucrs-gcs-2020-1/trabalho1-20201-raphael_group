@@ -4,6 +4,7 @@ import { Container } from "./styles";
 
 class HomePage extends Component {
   state = {
+    operator: "Operator 1",
     user: "Raquel",
     initials: "RT"
   };
@@ -30,9 +31,12 @@ class HomePage extends Component {
               Clique aqui para se registrar! 
           </Button>
           </Grid>
+          <text
+          > O seu operador atual é: {this.state.operator}, para criar um novo <Button onClick={() => window.location.href="/CreateOperator"}>clique aqui</Button></text>
         </Grid>
       </Container>
     );
   }
 }
+
 export default HomePage;
