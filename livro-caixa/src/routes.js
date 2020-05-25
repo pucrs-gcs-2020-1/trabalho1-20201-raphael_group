@@ -7,7 +7,6 @@ import SignUp from "./pages/SignUp"
 import ListOperator from "./pages/ListOperator";
 
 
-
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
