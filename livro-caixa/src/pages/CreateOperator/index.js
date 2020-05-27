@@ -23,4 +23,5 @@ class CreateOperator extends Component {
     );
   }
 }
+
 export default CreateOperator;
