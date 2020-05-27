@@ -5,6 +5,7 @@ import CreateOperator from "./pages/CreateOperator";
 import HomePage from "./pages/HomePage";
 import SignUp from "./pages/SignUp"
 import ListOperator from "./pages/ListOperator";
+import makeTransactions from "./pages/MakeTransaction"
 
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -27,6 +28,7 @@ const Routes = () => (
       <Route path="/signup" component={SignUp} />
       <Route path="/CreateOperator" component={CreateOperator}/>
       <Route path="/ListOperator" component={ListOperator}/>
+      <Route path="/makeTransactions" component={makeTransactions}/>
       <PrivateRoute path="/app" component={() => <h1>App</h1>} />
       <Route path="*" component={() => <h1>Page not found</h1>} />
     </Switch>
