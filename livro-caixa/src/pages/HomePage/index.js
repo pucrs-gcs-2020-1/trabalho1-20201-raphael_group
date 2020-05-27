@@ -6,7 +6,8 @@ class HomePage extends Component {
   state = {
     operator: "Jorge (JG)",
     user: "Raquel",
-    initials: "(RT)"
+    initials: "(RT)",
+    index: 0
   };
 
   render() {
@@ -15,16 +16,16 @@ class HomePage extends Component {
         <Grid style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: 20 }}>
           <Grid item md={3} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <text>O seu usuário atual é {this.state.user} {this.state.initials}, para troca-lo utilize os botões abaixo!</text>
-          <Button onClick={() => this.setState({ user: "Raquel", initials: "(RT)" })}>
+          <Button style={{backgroundColor: this.state.index === 1?  "yellow" : "white"}} onClick={() => this.setState({ user: "Raquel", initials: "(RT)", index: 1})}>
               Raquel
           </Button>
-          <Button onClick={() => this.setState({ user: "Vando", initials: "(VM)" })}>
+          <Button style={{backgroundColor: this.state.index === 2?  "yellow" : "white"}} onClick={() => this.setState({ user: "Vando", initials: "(VM)", index: 2})}>
               Vando
           </Button>
-          <Button onClick={() => this.setState({ user: "Romeu", initials: "(RJ)" })}>
+          <Button style={{backgroundColor: this.state.index === 3?  "yellow" : "white"}} onClick={() => this.setState({ user: "Romeu", initials: "(RJ)", index: 3 })}>
               Romeu
           </Button>
-          <Button onClick={() => this.setState({ user: "Thaisa", initials: "(TR)" })}>
+          <Button style={{backgroundColor: this.state.index === 4?  "yellow" : "white"}} onClick={() => this.setState({ user: "Thaisa", initials: "(TR)", index: 4 })}>
               Thaisa
           </Button>
           <Button onClick={() => window.location.href="/signup"}>

@@ -9,6 +9,8 @@ class ListOperator extends Component {
     destinyUser: "Vando (VM)",
     destinyUserAmount: 250,
     amountToSend: 0,
+    originalIndex: 0,
+    destinyIndex: 0,
     flag: false
   };
 
@@ -20,35 +22,35 @@ class ListOperator extends Component {
         <Grid style={{display:"flex", flexDirection:"column", justifyContent:"center", marginTop:20}}>
         <Grid item md={3} style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
           <text> Usuário Atual: {this.state.originalUser}, seu saldo é: R${this.state.originalUserAmount}</text>
-          <Button onClick={() => this.setState({originalUser:"Raquel (RT)", originalUserAmount: 100})}>
+          <Button style={{backgroundColor: this.state.originalIndex === 1?  "yellow" : "white"}} onClick={() => this.setState({originalUser:"Raquel (RT)", originalUserAmount: 100, originalIndex:1})}>
               Raquel
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Vando (VM)", originalUserAmount: 250})}>
+          <Button style={{backgroundColor: this.state.originalIndex === 2?  "yellow" : "white"}} onClick={() => this.setState({originalUser:"Vando (VM)", originalUserAmount: 250, originalIndex:2})}>
               Vando
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Romeu (RJ)",  originalUserAmount: 750})}>
+          <Button style={{backgroundColor: this.state.originalIndex === 3?  "yellow" : "white"}} onClick={() => this.setState({originalUser:"Romeu (RJ)",  originalUserAmount: 750, originalIndex:3})}>
               Romeu
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Thaisa (TR)",  originalUserAmount: 430})}>
+          <Button style={{backgroundColor: this.state.originalIndex === 4 ?  "yellow" : "white"}} onClick={() => this.setState({originalUser:"Thaisa (TR)",  originalUserAmount: 430, originalIndex:4})}>
               Thaisa
           </Button>
           </Grid>
           <text>Escolha entre os Usuários abaixo para definir o destinatário</text>
           <Grid item md={3} style={{display:"flex", flexDirection:"column", justifyContent:"center", marginTop:20}}>
             <text>Seu Usuário de destino é: {this.state.destinyUser} e seu saldo é de: R${this.state.destinyUserAmount}</text>
-          <Button onClick={() => this.setState({destinyUser:"Raquel (RT)", destinyUserAmount: 100})}>
+          <Button style={{backgroundColor: this.state.destinyIndex === 1 ?  "#72bcd4" : "white"}} onClick={() => this.setState({destinyUser:"Raquel (RT)", destinyUserAmount: 100, destinyIndex: 1})}>
               Raquel
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Vando (VM)", destinyUserAmount: 250})}>
+          <Button style={{backgroundColor: this.state.destinyIndex === 2 ?  "#72bcd4" : "white"}} onClick={() => this.setState({destinyUser:"Vando (VM)", destinyUserAmount: 250, destinyIndex: 2})}>
               Vando
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Romeu (RJ)",  destinyUserAmount: 750})}>
+          <Button style={{backgroundColor: this.state.destinyIndex === 3 ?  "#72bcd4" : "white"}} onClick={() => this.setState({destinyUser:"Romeu (RJ)",  destinyUserAmount: 750, destinyIndex: 3})}>
               Romeu
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Thaisa (TR)",  destinyUserAmount: 430})}>
+          <Button style={{backgroundColor: this.state.destinyIndex === 4 ?  "#72bcd4" : "white"}} onClick={() => this.setState({destinyUser:"Thaisa (TR)",  destinyUserAmount: 430, destinyIndex: 4})}>
               Thaisa
           </Button>
-          <TextField variant="outlined" label= "Quanto deseja transferir?" error={this.state.flag} onChange={(e) => this.setState({amountToSend:parseInt(e.target.value), flag: this.state.amountToSend > this.state.originalUserAmount ? true : false})} 
+          <TextField variant="outlined" type="number" inputProps={{ step:10 }} label= "Quanto deseja transferir?" error={this.state.flag} onChange={(e) => this.setState({amountToSend:parseInt(e.target.value), flag: this.state.amountToSend > this.state.originalUserAmount ? true : false})} 
             onClick={() => this.setState({flag: this.state.amountToSend > this.state.originalUserAmount ? true : false})}
           />
           <Button 
