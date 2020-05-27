@@ -4,9 +4,9 @@ import { Container } from "./styles";
 
 class HomePage extends Component {
   state = {
-    operator: "Operator 1",
+    operator: "Jorge (JG)",
     user: "Raquel",
-    initials: "RT"
+    initials: "(RT)"
   };
 
   render() {
@@ -15,16 +15,16 @@ class HomePage extends Component {
         <Grid style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: 20 }}>
           <Grid item md={3} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <text>O seu usuário atual é {this.state.user} {this.state.initials}, para troca-lo utilize os botões abaixo!</text>
-          <Button onClick={() => this.setState({ user: "Raquel", initials: "RT" })}>
+          <Button onClick={() => this.setState({ user: "Raquel", initials: "(RT)" })}>
               Raquel
           </Button>
-          <Button onClick={() => this.setState({ user: "Vando", initials: "VM" })}>
+          <Button onClick={() => this.setState({ user: "Vando", initials: "(VM)" })}>
               Vando
           </Button>
-          <Button onClick={() => this.setState({ user: "Romeu", initials: "RJ" })}>
+          <Button onClick={() => this.setState({ user: "Romeu", initials: "(RJ)" })}>
               Romeu
           </Button>
-          <Button onClick={() => this.setState({ user: "Thaisa", initials: "TR" })}>
+          <Button onClick={() => this.setState({ user: "Thaisa", initials: "(TR)" })}>
               Thaisa
           </Button>
           <Button onClick={() => window.location.href="/signup"}>
