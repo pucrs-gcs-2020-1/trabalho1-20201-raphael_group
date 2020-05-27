@@ -1,32 +1,26 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { Button, Grid, TextField } from "@material-ui/core";
-import { Form, Container } from "./styles";
+import { Container } from "./styles";
 
 class CreateOperator extends Component {
   state = {
-    operator: "Operator 1",
-    init: "OP"
+      operator: "",
+      init: ""
   };
-
 
   render() {
     return (
       <Container>
-        <Grid style={{display:"flex", flexDirection:"row", justifyContent:"flex-start", marginTop:"30px"}}>
-          <label>
-            Nome:
-            <input type="text" name="name" onChange={(value => this.setState({operator:value}))}/>
-          </label>
-          <label style={{marginLeft:"30px"}}>
-            Iniciais:
-            <input type="text" name="iniciais" onChange={(value => this.setState({operator:value}))}/>
-          </label>
-          <input type="submit" value="Confirmar" onClick={() => window.location.href="/ListOperator"}/>
+        <Grid style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: 20 }}>
+          <Grid item md={3} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <text style={{marginBottom:20}}> Digite as informações requeridas</text>
+             <TextField variant="outlined" label= "Nome " onChange={(value) => this.setState({operator:value})} style={{marginBottom:20}}/>
+             <TextField variant="outlined" label= "Iniciais " onChange={(value) => this.setState({init: value})} />
+             <Button onClick={() => window.location.href="/"}> Confirmar dados!</Button>
+          </Grid>
         </Grid>
       </Container>
     );
   }
 }
-
 export default CreateOperator;

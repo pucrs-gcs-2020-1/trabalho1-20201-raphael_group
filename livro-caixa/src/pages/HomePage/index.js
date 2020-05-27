@@ -28,7 +28,7 @@ class HomePage extends Component {
               Thaisa
           </Button>
           <Button onClick={() => window.location.href="/signup"}>
-              Clique aqui para se registrar! 
+              Clique aqui para se registrar!
           </Button>
           </Grid>
           <text
