@@ -4,9 +4,9 @@ import {Container } from "./styles";
 
 class ListOperator extends Component {
   state = {
-    originalUser: "Operator 1",
+    originalUser: "Raquel (RT)",
     originalUserAmount: 100,
-    destinyUser: "Operator 2",
+    destinyUser: "Vando (VM)",
     destinyUserAmount: 250,
     amountToSend: 0,
     flag: false
@@ -14,42 +14,39 @@ class ListOperator extends Component {
 
 
   render() {
-      console.log(this.state.originalUserAmount)
-      console.log(this.state.amountToSend)
-      console.log(this.state.flag)
     return (
       <Container>
-        <text>Escolha entre os Operadores abaixo para definir o remetente</text>
+        <text>Escolha entre os Usuário abaixo para definir o remetente</text>
         <Grid style={{display:"flex", flexDirection:"column", justifyContent:"center", marginTop:20}}>
         <Grid item md={3} style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
-          <text> Operador Atual: {this.state.originalUser}, seu saldo é: R${this.state.originalUserAmount}</text>
-          <Button onClick={() => this.setState({originalUser:"Operator 1", originalUserAmount: 100})}>
-              Operador 1
+          <text> Usuário Atual: {this.state.originalUser}, seu saldo é: R${this.state.originalUserAmount}</text>
+          <Button onClick={() => this.setState({originalUser:"Raquel (RT)", originalUserAmount: 100})}>
+              Raquel
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Operator 2", originalUserAmount: 250})}>
-              Operador 2
+          <Button onClick={() => this.setState({originalUser:"Vando (VM)", originalUserAmount: 250})}>
+              Vando
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Operator 3",  originalUserAmount: 750})}>
-              Operador 3
+          <Button onClick={() => this.setState({originalUser:"Romeu (RJ)",  originalUserAmount: 750})}>
+              Romeu
           </Button>
-          <Button onClick={() => this.setState({originalUser:"Operator 4",  originalUserAmount: 430})}>
-              Operador 4
+          <Button onClick={() => this.setState({originalUser:"Thaisa (TR)",  originalUserAmount: 430})}>
+              Thaisa
           </Button>
           </Grid>
-          <text>Escolha entre os Operadores abaixo para definir o destinatário</text>
+          <text>Escolha entre os Usuários abaixo para definir o destinatário</text>
           <Grid item md={3} style={{display:"flex", flexDirection:"column", justifyContent:"center", marginTop:20}}>
-            <text>Seu operador de destino é: {this.state.destinyUser} e seu saldo é de: R${this.state.destinyUserAmount}</text>
-          <Button onClick={() => this.setState({destinyUser:"Operator 1", destinyUserAmount: 100})}>
-              Operador 1
+            <text>Seu Usuário de destino é: {this.state.destinyUser} e seu saldo é de: R${this.state.destinyUserAmount}</text>
+          <Button onClick={() => this.setState({destinyUser:"Raquel (RT)", destinyUserAmount: 100})}>
+              Raquel
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Operator 2", destinyUserAmount: 250})}>
-              Operador 2
+          <Button onClick={() => this.setState({destinyUser:"Vando (VM)", destinyUserAmount: 250})}>
+              Vando
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Operator 3",  destinyUserAmount: 750})}>
-              Operador 3
+          <Button onClick={() => this.setState({destinyUser:"Romeu (RJ)",  destinyUserAmount: 750})}>
+              Romeu
           </Button>
-          <Button onClick={() => this.setState({destinyUser:"Operator 4",  destinyUserAmount: 430})}>
-              Operador 4
+          <Button onClick={() => this.setState({destinyUser:"Thaisa (TR)",  destinyUserAmount: 430})}>
+              Thaisa
           </Button>
           <TextField variant="outlined" label= "Quanto deseja transferir?" error={this.state.flag} onChange={(e) => this.setState({amountToSend:parseInt(e.target.value), flag: this.state.amountToSend > this.state.originalUserAmount ? true : false})} 
             onClick={() => this.setState({flag: this.state.amountToSend > this.state.originalUserAmount ? true : false})}
