@@ -28,7 +28,7 @@ class HomePage extends Component {
               Thaisa
           </Button>
           <Button onClick={() => window.location.href="/signup"}>
-              Clique aqui para se registrar! 
+              Clique aqui para se registrar!
           </Button>
           <text> O seu operador atual é: {this.state.operator}</text>
           <Button onClick={() => window.location.href="/CreateOperator"}>Clique aqui para trocar</Button>

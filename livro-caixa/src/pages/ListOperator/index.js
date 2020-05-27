@@ -5,31 +5,33 @@ import { Form, Container } from "./styles";
 
 class ListOperator extends Component {
   state = {
-    operator: "Operator 1",
+    operator: "Jorge",
+    init: "(JG)"
   };
 
   render() {
     return (
       <Container>
-        <text>Escolha entre os outros Operadores abaixo!</text>
-        <Grid style={{display:"flex", flexDirection:"column", justifyContent:"center", marginTop:20}}>
-        <Grid item md={3} style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
-          <text> Operador Atual: {this.state.user}</text>
-          <Button onClick={() => this.setState({user:"Operator 1"})}>
-              Operador 1
+        <Grid style={{ display: "flex", flexDirection: "column", justifyContent: "center", marginTop: 20 }}>
+          <Grid item md={3} style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <text>O seu operador atual é {this.state.operator} {this.state.init}, para trocá-lo utilize os botões abaixo!</text>
+          <Button onClick={() => this.setState({ operator: "Jorge", init: "(JG)" })}>
+              Jorge
           </Button>
-          <Button onClick={() => this.setState({user:"Operator 2"})}>
-              Operador 2
+          <Button onClick={() => this.setState({ operator: "Paula", init: "(PB)" })}>
+              Paula
           </Button>
-          <Button onClick={() => this.setState({user:"Operator 3"})}>
-              Operador 3
+          <Button onClick={() => this.setState({ operator: "Vanessa", init: "(VV)" })}>
+              Vanessa
           </Button>
-          <Button onClick={() => this.setState({user:"Operator 4"})}>
-              Operador 4
+          <Button onClick={() => this.setState({ operator: "Caio", init: "(CL)" })}>
+              Caio
           </Button>
-          <Button onClick={() => window.location.href="/"}>
-              Para voltar clique aqui!
+          <Button onClick={() => window.location.href="/CreateOperator"}>
+              Clique aqui para registrar um novo operador!
           </Button>
+          <text> Para voltar para Home Page <Button onClick={() => window.location.href="/"}>clique aqui</Button>
+          </text>
           </Grid>
         </Grid>
       </Container>
