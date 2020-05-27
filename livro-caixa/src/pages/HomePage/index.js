@@ -30,9 +30,10 @@ class HomePage extends Component {
           <Button onClick={() => window.location.href="/signup"}>
               Clique aqui para se registrar!
           </Button>
+          <text> O seu operador atual é: {this.state.operator}</text>
+          <Button onClick={() => window.location.href="/CreateOperator"}>Clique aqui para trocar</Button>
+          <Button onClick={() => window.location.href="/makeTransactions"}> Para fazer movimentos entre contas, clique aqui!</Button>
           </Grid>
-          <text
-          > O seu operador atual é: {this.state.operator}, para criar um novo <Button onClick={() => window.location.href="/CreateOperator"}>clique aqui</Button></text>
         </Grid>
       </Container>
     );
