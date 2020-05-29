@@ -34,6 +34,7 @@ class HomePage extends Component {
           <text> O seu operador atual é: {this.state.operator}</text>
           <Button onClick={() => window.location.href="/listOperator"}>Clique aqui para trocar!</Button>
           <Button onClick={() => window.location.href="/makeTransactions"}> Para fazer movimentos entre contas, clique aqui!</Button>
+          <Button onClick={() => window.location.href="/receipt"}> Para ver relatórios gerais clique aqui!</Button>
           </Grid>
         </Grid>
       </Container>
