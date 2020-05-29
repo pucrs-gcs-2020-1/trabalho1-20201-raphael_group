@@ -5,8 +5,6 @@ Componentes do time:
 - Raphael Remião 
 - Enzo Russo
 - Giovanni Frozza
-- Andrei Rupertti
-
 
 # Definindo regras:
 # TODO commit deve ter uma tag!
